@@ -1,0 +1,25 @@
+name: github_vars
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  showvars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+      - name: github_references
+        run: |
+          echo "${{github.actor}}"
+          echo "${{github.actor_id}}"
+          echo "${{github.api_url}}"
+          echo "${{github.base_ref}}"
+          echo "${{github.env}}"
+          echo "${{github.event_name}}"
+          echo "${{github.head_ref}}"
+          echo "${{github.job}}"
+          echo "${{github.ref}}"
+          
