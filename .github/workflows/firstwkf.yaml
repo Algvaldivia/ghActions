@@ -10,6 +10,10 @@ jobs:
     name: This is the first job
     runs-on: ubuntu-latest
     steps:
-      - name: first_step
-        id: first_step
-        run: echo Hello World!    
+      - name: check_out
+        id: check_out
+        uses: actions/checkout@v3
+        
+      - name: cat_content
+        run: |
+          echo $(cat hello-world.txt)
