@@ -1,9 +1,7 @@
 name: First Workflow 
 
 on:
-  push:
-    branches:
-      - main
+  milestone:
 
 jobs:
   first_job:
