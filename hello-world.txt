@@ -1,1 +1,1 @@
-This the file hello-world.txt text file content.
+This the file hello-world.txt text file content from spinup branch.
