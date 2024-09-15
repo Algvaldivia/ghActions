@@ -1,10 +1,7 @@
 name: github_vars
 
 on:
-  push:
-    branches:
-      - main
-
+  pull_request:
 jobs:
   showvars:
     runs-on: ubuntu-latest
